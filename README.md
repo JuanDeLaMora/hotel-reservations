@@ -2,7 +2,7 @@
 
 
 # Requirements:
-Requires Maven 3 or newer and Java JDK 8 or newer.
+Requires Maven 3 or newer and Java JDK 17 or newer.
 
 To build:
 mvn clean package
