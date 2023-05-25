@@ -8,7 +8,7 @@ public class HotelValidator {
     public void validateHotelRequest(HotelRequest request) throws ValidationException {
         StringBuilder errors = new StringBuilder();
 
-        if (request.getClientFullName().isBlank()) {
+        if (request.getClientFullName() == null || request.getClientFullName().isBlank()) {
             errors.append("Client name cannot be blank. ");
         }
 
@@ -16,7 +16,7 @@ public class HotelValidator {
             errors.append("Room number is mandatory. ");
         }
 
-        if (request.getReservationDates() ==null || request.getReservationDates().isEmpty()) {
+        if (request.getReservationDates() == null || request.getReservationDates().isEmpty()) {
             errors.append("At least one date needs to be provided for a reservation. ");
         }
 

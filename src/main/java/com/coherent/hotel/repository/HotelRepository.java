@@ -9,7 +9,7 @@ import java.util.Set;
 
 @Repository
 public class HotelRepository {
-    private static Set<Reservation> reservations = new HashSet<>();
+    private static final Set<Reservation> reservations = new HashSet<>();
     private static int idCounter = 0;
 
     public Set<Reservation> getAllReservations() {

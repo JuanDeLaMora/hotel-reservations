@@ -1,14 +1,4 @@
 # hotel-reservations
-
-
+Application can be managed in Swagger UI at: http://localhost:8080/swagger-ui/index.html
 # Requirements:
 Requires Maven 3 or newer and Java JDK 17 or newer.
-
-To build:
-mvn clean package
-
-To run tests and coverage report:
-mvn clean verify
-
-To run checkstyle report:
-mvn checkstyle:checkstyle
